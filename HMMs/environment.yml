@@ -1,0 +1,22 @@
+# Create environment with `conda env create -f environment.yml`
+# Activate environment with `conda activate prml`
+# Update environment with `conda env update --file environment.yml`
+# Remove environment with `conda remove --name prml --all`
+
+name: prml
+channels:
+     - https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/bioconda/
+  - https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge/
+  - https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
+  - https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/
+
+dependencies:
+    - python=3.8
+    - numpy=1.21.4
+    - matplotlib 
+    - scipy
+    - pip
+    - pip:
+        - jdc
+    - notebook
+    - ipywidgets
